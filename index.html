@@ -7,6 +7,58 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>hello <i class="fas fa-wordpress-simple"></i></h1>
+    <div class="full-image" id="fullImgBox">
+      <img src="./images/1084661 (copy).jpg" alt="" id="fullImg" />
+      <span onclick="closeImage()">X</span>
+    </div>
+    <h1>Gallery</h1>
+    <div class="img-gallery">
+      <img src="./images/1084661 (copy).jpg" alt="" onclick="openImage()" />
+      <img src="./images/1084663 (copy).jpg" alt="" onclick="openImage()" />
+      <img src="./images/1140982 (copy).jpg" alt="" onclick="openImage()" />
+      <img src="./images/1141137.jpg" alt="" onclick="openImage()" />
+      <img src="./images/1323165.png" alt="" onclick="openImage()" />
+      <img src="./images/1330761.png" alt="" onclick="openImage()" />
+      <img src="./images/160752.jpg" alt="" onclick="openImage()" />
+      <img
+        src="./images/Cyberpunk-Lines-Artwork-4K-Ultra-HD-Wallpaper-3840x2160-15.jpg"
+        alt=""
+        onclick="openImage()"
+      />
+      <img
+        src="./images/175467-anime-izuku_midoriya-all_might-my_hero_academia-anime_art-3840x2160.jpg"
+        alt=""
+        onclick="openImage()"
+      />
+
+      <img
+        src="./images/164398-atmosphere-street_light-entertainment-performing_arts-dusk-3840x2160.jpg"
+        alt=""
+        onclick="openImage()"
+      />
+      <img
+        src="./images/169757-howls_moving_castle-anime-ghibli_museum-world-natural_landscape-3840x2160.jpg"
+        alt=""
+        onclick="openImage()"
+      />
+      <img
+        src="./images/172126-anime-yuji_itadori-ryomen_sukuna-jujutsu_kaisen-cartoon-3840x2160.jpg"
+        alt=""
+        onclick="openImage()"
+      />
+    </div>
+
+    <script>
+      const fullImagBox = document.getElementById("fullImgBox");
+      const fullImag = document.getElementById("fullImg");
+
+      function openImage() {
+        fullImagBox.style.display = "flex";
+        fullImag.src = event.target.src;
+      }
+      let closeImage = () => {
+        fullImagBox.style.display = "none";
+      };
+    </script>
   </body>
 </html>
